@@ -1,0 +1,9 @@
+def bubblesort(nos):
+  for n in range(len(nos)-1, 0, -1):
+    for i in range(n):
+      if nos[i] > nos[i + 1]:
+        nos[i], nos[i + 1] = nos[i + 1], nos[i]
+nos = [6,4,2,7,1,5] 
+bubblesort(nos)
+print("Sorted Nos are:-")
+print(nos)
